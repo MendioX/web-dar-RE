@@ -71,6 +71,22 @@ App.post("/newCampains", (req, res) => {
   });
 
 
+  App.post("/updateDonors/:id", (req, res) => {
+    const { id } = req.params;
+    const { donors } = req.body; // Nuevo valor para el campo "donors"
+  
+    // Realizar la actualización en la base de datos
+    const sql = "UPDATE campains SET donors = ? WHERE id = ?";
+    db.query(sql, [donors, id], (err, result) => {
+      if (err) {
+        return res.status(500).json({ Message: "Error en el servidor" });
+      }
+      return res.status(200).json({ Message: "Actualización exitosa" });
+    });
+});
+
+
+
 
 App.listen(8081, () => {
     console.log("listening")
