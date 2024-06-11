@@ -1,0 +1,22 @@
+.sectioninicio {
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.principal {
+margin-top: 10%;
+  font-size: larger;
+  width: 50%;
+}
+
+.logoDar{
+  height: 20vh;
+  width: 30vw;
+}
+
+

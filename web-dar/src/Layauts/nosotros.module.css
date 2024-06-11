@@ -1,0 +1,57 @@
+
+
+.container{
+  height: 90%;
+  padding-top: 10%;
+}
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+.card {
+  display: flex;
+  height: 50vh;
+  
+}
+
+.cardTop h1 {
+  font-size: 0.9rem;
+  margin: 20px;
+}
+
+.cardTop  {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  background: black;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.cardBottom {
+  margin: 10px 20px;
+}
+
+.category {
+  position: relative;
+}
+.category::before {
+  content: '';
+  background: rgb(255, 61, 61);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.imgImport {
+  width: 100%; /* La imagen se ajustará al 100% del ancho del contenedor */
+  height: 100%; /* La altura se ajustará automáticamente para mantener la proporción original */
+  display: block; 
+}

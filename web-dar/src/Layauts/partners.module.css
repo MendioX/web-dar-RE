@@ -1,0 +1,41 @@
+.mainPartner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xxx-large;
+
+}
+
+.partnersContainer {
+
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 60vw;
+}
+
+.partnersContainer div {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos{
+
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    filter:grayscale(2);
+    transition: ease-in 0.3s;
+
+}
+
+.logos:hover {
+    transition: ease-in 0.3s;
+    filter: none;
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+    color: white;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navBarOpen{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 20%;
+     width: 100%;
+     background-color: red;
+     color: white;
+}
+
+.logo {
+    color: white;
+
+}
+
+.ulCategories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+
+
+   
+}
+
+
+
+
+
+.navLink {
+    display: table;
+    cursor: pointer;
+   color: whitesmoke; 
+
+   text-decoration: none; /* Desactiva cualquier decoración de texto predeterminada, como subrayado */
+   /* color: #333; Define el color de texto predeterminado */
+   transition: ease-in 0.2s;
+}
+
+
+.navLink::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: white;
+    transform: scale(0,1);
+    transform-origin: center;
+    transition: transform .25s;
+}
+.navLink:hover::after {
+    transform: scale(1,1);
+ 
+}
